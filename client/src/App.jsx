@@ -32,7 +32,7 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.post('http://localhost:3001/tone-adjust', {
+      const response = await axios.post('https://ai-powered-text-editor-1.onrender.com', {
         text,
         toneLevel: newTone,
       });
